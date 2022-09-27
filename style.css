@@ -1,0 +1,148 @@
+/*bart*/
+#bart * {
+    position: absolute;
+
+}
+body {
+    background-color: #fbd800;
+}
+#bart {
+    display: inline-flex;
+    position: relative;
+    width: 150px;
+    height: 100px;
+
+}
+#bart .head * {
+    border: 1px solid #110b00;
+}
+#bart .head .noborder {
+    border: none;
+}
+#bart .head .body {
+    background: #fbd800;
+}
+#bart .head .righteye {
+    top: 0px;
+    left: 70px;
+    width: 54px;
+    height: 54px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+    overflow: hidden;
+}
+#bart .head .righteye .righteyepupil {
+    top: 21px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #110b00;
+    animation: 5s right infinite;
+}
+#bart .head .lefteye {
+    top: 0px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+    overflow: hidden;
+}
+#bart .head .lefteye .lefteyepupil {
+    top: 23px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #110b00;
+    animation: 5s left infinite;
+}
+#bart .head .nose {
+    top: 45px;
+    left: 55px;
+    width: 54px;
+    height: 24px;
+    border-top: 1px solid #110b00;
+}
+#bart .head .nosetip {
+    top: 45px;
+    left: 100px;
+    width: 28px;
+    height: 24px;
+    border-left: none;
+    -moz-border-radius: 0 50% 50% 0%;
+    -webkit-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.content {
+    width: 30%;
+    min-height: 50px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #110b00;
+}
+.text {
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+.mobo {
+    display: flex;
+}
+
+
+@keyframes left {
+    0%, 100%{
+        left: 19px;
+    }
+    40%, 70%{
+        left: 39px;
+    }
+}
+@keyframes right {
+    0%, 100%{
+        left: 19px;
+    }
+    40%, 70%{
+        left: 39px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .mobo{
+        flex-direction: column-reverse;
+    }
+    .circle1  {
+        border-radius: 50px;
+        background-color: rgb(141, 141, 141);
+        width: 15px;
+        height: 15px;
+        margin-left: 15px;
+        border: 1px solid #110b00;
+    }
+    .circle2 {
+        border-radius: 50px;
+        background-color: rgb(181, 181, 181);
+        width: 25px;
+        height: 25px;
+        margin-left: 15px;
+        border: 1px solid #110b00;
+    }
+    .circle3 {
+        border-radius: 50px;
+        background-color: white;
+        width: 35px;
+        height: 35px;
+        margin-left: 15px;
+        border: 1px solid #110b00;
+    }
+}
